@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  postgresql:
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    environment:
+      - PG_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PG_DATABASE=dockerfile_test_development
